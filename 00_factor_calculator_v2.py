@@ -27,11 +27,9 @@ def num_check(question, low, high):
             response = int(input(question))
 
             # checks if numer is more than low
-            if response >= low:
+            if low >= response <= high:
                 return response
-            #checks if number is lower than high
-            elif response <= high:
-                return response
+
             else: 
                 print(error)
                 print()
@@ -40,9 +38,32 @@ def num_check(question, low, high):
             print(error)
             print()
 
-#calculates the factors of a number
-def factor_calc(int):
-    int
+import random
+
+my_list = []
+
+# generate 4 random numbers between 1 & 10...
+for item in range(0, 4):
+
+    # generate random number between 1 and 10
+    random_num = random.randint(1, 10)
+
+    # add number to list
+    my_list.append(random_num)
+
+# print the unsorted list
+print(my_list)
+
+# sort the list
+my_list.sort()
+
+my_list_len = len(my_list)
+
+# print the sorted list
+print()
+print(my_list)
+print("The list has {} items".format(my_list_len))
+print()
 
 
 
